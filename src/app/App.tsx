@@ -1,22 +1,19 @@
+import { Button } from '../components/Button';
 import './App.css';
+import { TaskCard } from '../components/Task';
+import { Greeting } from '../components/Greeting';
+import { Post } from '../components/Posts';
+import { Counter } from '../components/Counter';
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<>
+			<TaskCard ready={true} />
+			<Greeting />
+			<Button text='Send' />
+			<Post />
+			<Counter />
+		</>
 	);
 }
 
